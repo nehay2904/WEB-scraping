@@ -19,7 +19,7 @@ class BookspiderSpider(scrapy.Spider):
              
             yield response.follow(book_url, callback= self.parse_book_page)
 
-
+# 
         def parse_book_page(self, response){
             pass
         }
